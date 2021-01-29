@@ -1,0 +1,14 @@
+# qssi-user 10 MOBS2005121OS00MP1 V11.0.4.0.JOYUI release-keys
+- manufacturer: blackshark
+- platform: kona
+- codename: mobius
+- flavor: qssi-user
+- release: 10
+- id: MOBS2005121OS00MP1
+- incremental: V11.0.4.0.JOYUI
+- tags: release-keys
+- fingerprint: blackshark/MBU-H0/mobius:10/MOBS2005121OS00MP1/V11.0.4.0.JOYUI:user/release-keys
+- is_ab: true
+- brand: blackshark
+- branch: qssi-user-10-MOBS2005121OS00MP1-V11.0.4.0.JOYUI-release-keys
+- repo: blackshark_mobius_dump
