@@ -1,0 +1,38 @@
+on post-fs-data
+    mkdir /data/junk-server  0777 root root
+    mkdir /junk/junk-server  0770 root root
+    mkdir /data/tombstones 0775 system system
+
+	
+on nonencrypted
+	setprop sys.mts.enable 1
+
+on property:vold.decrypt=trigger_restart_framework
+	setprop sys.mts.enable 1
+
+	
+on property:persist.vendor.zeusis.junk.enable=0 && property:sys.mts.enable=1
+    stop junkserverdUtils
+
+on property:persist.vendor.zeusis.junk.enable=0 && property:sys.mts.enable=0
+    stop junkserverd
+
+	
+on property:persist.vendor.phone.beta.state=1 && property:persist.vendor.zeusis.junk.enable=1 && property:sys.mts.enable=1
+    setprop sys.phone.beta 1
+    restart junkserverd
+
+on property:persist.vendor.phone.beta.state=2 && property:persist.vendor.zeusis.junk.enable=1 && property:sys.mts.enable=1
+    setprop sys.phone.beta 2
+    restart junkserverd
+
+on property:persist.vendor.phone.beta.state=3 && property:persist.vendor.zeusis.junk.enable=1 && property:sys.mts.enable=1
+    setprop sys.phone.beta 3
+    restart junkserverd
+
+    
+service junkserverd /system/bin/junkserver
+	user root
+    group root
+	disabled
+    writepid /dev/cpuset/system-background/tasks    

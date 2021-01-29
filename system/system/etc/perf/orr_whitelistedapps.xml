@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<policy>
+    <mode name="game" id="0">
+        <item name="package_name" density="420">com.tencent.tmgp.speedmobile/com.tencent.tmgp.speedmobile.speedmobile</item>
+        <item name="package_name" density="420">com.miHoYo.bh3.mi/com.miHoYo.overridenativeactivity.OverrideNativeActivity</item>
+        <item name="package_name" density="420">com.tencent.tmgp.bh3/com.miHoYo.overridenativeactivity.OverrideNativeActivity</item>
+    </mode>
+</policy>
