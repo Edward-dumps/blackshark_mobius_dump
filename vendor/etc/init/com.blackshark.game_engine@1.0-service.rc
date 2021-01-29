@@ -1,0 +1,4 @@
+service game_engine-1-0 /vendor/bin/hw/com.blackshark.game_engine@1.0-service
+    class hal
+    user root
+    group root system readproc

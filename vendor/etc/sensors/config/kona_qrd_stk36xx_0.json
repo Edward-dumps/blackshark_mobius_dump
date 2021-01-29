@@ -1,0 +1,197 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "RCM", "HDK", "IDP", "QRD"],
+    "soc_id": ["356"]
+  },
+    "stk36xx_0":{
+    "owner": "sns_stk36xx",
+    ".ambient_light":{
+      "owner": "sns_stk36xx",
+      ".config":{
+        "owner": "sns_stk36xx",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+	".proximity":{
+      "owner": "sns_stk36xx",
+      ".config":{
+        "owner": "sns_stk36xx",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+	".rgb":{
+      "owner": "sns_stk36xx",
+      ".config":{
+        "owner": "sns_stk36xx",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+    "stk36xx_0_platform":{
+      "owner": "sns_stk36xx",
+      ".config":{
+        "owner": "sns_stk36xx",
+        "bus_type":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "bus_instance":{ "type": "int", "ver": "0",
+          "data": "5"
+        },
+        "slave_config":{ "type": "int", "ver": "0",
+          "data": "71"
+        },
+        "min_bus_speed_khz":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "max_bus_speed_khz":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "reg_addr_type":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "dri_irq_num":{ "type": "int", "ver": "0",
+          "data": "122"
+        },
+        "irq_pull_type":{ "type": "int", "ver": "0",
+          "data": "3"
+        },
+        "irq_is_chip_pin":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "irq_drive_strength":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "irq_trigger_type":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "num_rail":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "rail_on_state":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "vdd_rail":{ "type": "str", "ver": "0",
+          "data": "/pmic/client/sensor_vdd"
+        },
+        "vddio_rail":{ "type": "str", "ver": "0",
+          "data": "/pmic/client/sensor_vddio"
+        },
+        "rigid_body_type":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+    },
+	".als":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "5000.0"
+        }
+      }
+    },
+	".ps":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "offset":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "r_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },
+        "g_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },
+        "b_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },
+        "c_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        }
+    },
+	".mobius_info":{
+	    "owner": "sns_stk36xx",
+        "r_target":{ "type": "flt", "ver": "0",
+        "data": "606.0"
+        },
+        "g_target":{ "type": "flt", "ver": "0",
+        "data": "573.0"
+        },
+        "b_target":{ "type": "flt", "ver": "0",
+        "data": "303.0"
+        },
+        "c_target":{ "type": "flt", "ver": "0",
+        "data": "670.0"
+        }
+    },
+    ".klein_info":{
+	    "owner": "sns_stk36xx",
+        "r_target":{ "type": "flt", "ver": "0",
+        "data": "856.0"
+        },
+        "g_target":{ "type": "flt", "ver": "0",
+        "data": "911.0"
+        },
+        "b_target":{ "type": "flt", "ver": "0",
+        "data": "229.0"
+        },
+        "c_target":{ "type": "flt", "ver": "0",
+        "data": "765.0"
+        }
+    },
+    ".ps":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "600.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "500.0"
+        }
+      }
+    }
+  }
+}
